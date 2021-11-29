@@ -1,0 +1,2 @@
+# why learning Hive SQL
+
