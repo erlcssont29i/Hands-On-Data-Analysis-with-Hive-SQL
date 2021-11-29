@@ -1,7 +1,5 @@
 # Table of contents
 
-* [About me](http://user108561.psee.io/3thlp3)
-
 ## Introduction
 
 * [About This Book](README.md)
