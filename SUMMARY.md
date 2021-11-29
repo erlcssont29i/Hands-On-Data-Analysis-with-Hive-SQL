@@ -18,7 +18,8 @@
 ## Part II-基本統計篇
 
 * [About Part II](part-ii-ji-ben-tong-ji-pian/about-part-ii.md)
-* [3.初次見面：SELECT基礎查詢](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun.md)
+* [3.初次見面：SELECT基礎查詢](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/README.md)
+  * [SELECT起手式與語句順序](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/select-qi-shou-shi-yu-yu-ju-shun-xu.md)
 * [4.過濾你想要的數據](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju.md)
 * [5.生成新的字段-字段運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan.md)
 * [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu.md)
