@@ -35,8 +35,8 @@
 
 * [About Part IV](part-iv-shu-ju-fen-xi-jin-jie/about-part-iv.md)
 * [10.實現多表查詢：子查詢](part-iv-shu-ju-fen-xi-jin-jie/10.-shi-xian-duo-biao-cha-xun-zi-cha-xun.md)
-* [11.利用JOIN實現表的橫向連接](part-iv-shu-ju-fen-xi-jin-jie/11.-li-yong-join-shi-xian-biao-de-heng-xiang-lian-jie.md)
-* [12.利用UNION實現表的縱向連接](part-iv-shu-ju-fen-xi-jin-jie/12.-li-yong-union-shi-xian-biao-de-zong-xiang-lian-jie.md)
+* [11.利用JOIN實現表的橫向連接](part-iv-shu-ju-fen-xi-jin-jie/11.-shi-xian-duo-biao-cha-xun-li-yong-join-shi-xian-biao-de-heng-xiang-lian-jie.md)
+* [12.利用UNION實現表的縱向連接](part-iv-shu-ju-fen-xi-jin-jie/12.-shi-xian-duo-biao-cha-xun-li-yong-union-shi-xian-biao-de-zong-xiang-lian-jie.md)
 * [13.改變表結構：行列互轉](part-iv-shu-ju-fen-xi-jin-jie/13.-gai-bian-biao-jie-gou-hang-lie-hu-zhuan.md)
 * [14.強大的窗口函數](part-iv-shu-ju-fen-xi-jin-jie/14.-qiang-da-de-chuang-kou-han-shu.md)
 * [15.庫、表的操作](part-iv-shu-ju-fen-xi-jin-jie/15.-ku-biao-de-cao-zuo.md)
