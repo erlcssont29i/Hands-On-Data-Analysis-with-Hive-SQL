@@ -13,7 +13,7 @@ Hadoop是一個分佈式計算的基礎架構，因具備高可靠、高拓展�
 
 這兩個問題，就是涉及數據的儲存及計算，針對如上問題，Google在2004年前後發表了三篇論文—Google File System、MapReduce以及Bigtable。
 
-GFS解決了數據大規模存儲的問題，讓數據可以幾乎無限的增長下去； MapReduce解決了數據大規模計算的問題，讓大規模數據處理成為可能)，Google這三篇論文也就是Hadoop的思想來源，正是Google的解決方案才成就了今天的Hadoop。
+GFS解決了數據大規模存儲的問題，讓數據可以幾乎無限的增長下去； MapReduce解決了數據大規模計算的問題，讓大規模數據處理成為可能，Google這三篇論文也就是Hadoop的思想來源，正是Google的解決方案才成就了今天的Hadoop。
 
 ***
 
