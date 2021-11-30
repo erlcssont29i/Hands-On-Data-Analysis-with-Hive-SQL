@@ -20,6 +20,7 @@
 * [About Part II](part-ii-ji-ben-tong-ji-pian/about-part-ii.md)
 * [3.初次見面：SELECT基礎查詢](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/README.md)
   * [SELECT起手式與語句順序](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/select-qi-shou-shi-yu-yu-ju-shun-xu.md)
+  * [單個檢索、多個檢索與\*符號](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/dan-ge-jian-suo-duo-ge-jian-suo-yu-fu-hao.md)
 * [4.過濾你想要的數據](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju/README.md)
   * [比較運算](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju/bi-jiao-yun-suan.md)
 * [5.生成新的字段-字段運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/README.md)
