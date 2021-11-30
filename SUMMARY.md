@@ -20,9 +20,12 @@
 * [About Part II](part-ii-ji-ben-tong-ji-pian/about-part-ii.md)
 * [3.初次見面：SELECT基礎查詢](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/README.md)
   * [SELECT起手式與語句順序](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/select-qi-shou-shi-yu-yu-ju-shun-xu.md)
-* [4.過濾你想要的數據](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju.md)
-* [5.生成新的字段-字段運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan.md)
-* [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu.md)
+* [4.過濾你想要的數據](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju/README.md)
+  * [比較運算](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju/bi-jiao-yun-suan.md)
+* [5.生成新的字段-字段運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/README.md)
+  * [Column的四則運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/column-de-si-ze-yun-suan.md)
+* [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/README.md)
+  * [聚合函數基本用法](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa.md)
 
 ## Part III-數據預處理篇
 
