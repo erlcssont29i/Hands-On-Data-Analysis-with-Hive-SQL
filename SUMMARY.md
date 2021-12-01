@@ -33,6 +33,9 @@
   * [多過濾條件组合](part-ii-ji-ben-tong-ji-pian/4.-guo-lv-ni-xiang-yao-de-shu-ju/duo-guo-lv-tiao-jian-zu-he.md)
 * [5.生成新的字段-字段運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/README.md)
   * [Column的四則運算](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/column-de-si-ze-yun-suan.md)
+  * [好用的取別名(alias)](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/hao-yong-de-qu-bie-ming-alias.md)
+  * [取別名後如何排序](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/qu-bie-ming-hou-ru-he-pai-xu.md)
+  * [代碼註釋](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/dai-ma-zhu-shi.md)
 * [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/README.md)
   * [聚合函數基本用法](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa.md)
 
