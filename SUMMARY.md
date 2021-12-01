@@ -13,7 +13,9 @@
   * [認識開發環境：Hadoop與Hive](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/ren-shi-kai-fa-huan-jing-hadoop-yu-hive.md)
   * [Hive與關聯式資料庫的區別](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/hive-yu-guan-lian-shi-zi-liao-ku-de-qu-bie.md)
   * [認識Hue與Table](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/ren-shi-hue-yu-table.md)
-* [2.大數據環境安裝與數據導入](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/2.-da-shu-ju-huan-jing-an-zhuang-yu-shu-ju-dao-ru.md)
+* [2.大數據環境安裝與數據導入](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/2.-da-shu-ju-huan-jing-an-zhuang-yu-shu-ju-dao-ru/README.md)
+  * [Hadoop環境安裝](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/2.-da-shu-ju-huan-jing-an-zhuang-yu-shu-ju-dao-ru/hadoop-huan-jing-an-zhuang.md)
+  * [課程數據模型與導入](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/2.-da-shu-ju-huan-jing-an-zhuang-yu-shu-ju-dao-ru/ke-cheng-shu-ju-mo-xing-yu-dao-ru.md)
 
 ## Part II-基本統計篇
 
