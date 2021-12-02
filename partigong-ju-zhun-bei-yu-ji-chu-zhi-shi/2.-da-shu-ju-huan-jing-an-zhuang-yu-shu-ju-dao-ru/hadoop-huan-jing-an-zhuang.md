@@ -9,7 +9,7 @@
 
 **Step2 : 在終端機(terminal)輸入啟動命令**
 
-課程課程提供的**docker-hadoop-hive-parquet** 放入Documents，打開終端機(terminal)， 輸入安裝命令`cd ~/Documents/docker-hadoop-hive-parquet/`，Enter執行；接著在terminal輸入啟動命令`docker-compose up -d`或是`docker-compose up`
+下載課程提供的**docker-hadoop-hive-parquet** 文件保存至Documents，打開終端機(terminal)， 輸入安裝命令`cd ~/Documents/docker-hadoop-hive-parquet/`，Enter執行；接著在terminal輸入啟動命令`docker-compose up -d`或是`docker-compose up`
 
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gs1clfgazyj30ft0a8jsk.jpg)
 
