@@ -41,6 +41,6 @@ where valid_time between '2020-01-01' and '2020-01-02'
 
 **如果要查到2020-01-02這一整天的數據，那麼在取值的時候需要加1天，即BETWE '2020-01-01' AND '2020-01-03'，這樣返回的就是1月1日(含)到1月2日(含)的所有數據了。**
 
-然而實務上，利用**時間處理函數**進行處理會是更常見的做法，在<[_用函數高效的處理數據_](../../part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju.md)>的章節將詳細介紹。
+然而實務上，利用**時間處理函數**進行處理會是更常見的做法，在<[_用函數高效的處理數據_](../../part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju/)>的章節將詳細介紹。
 {% endhint %}
 

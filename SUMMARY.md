@@ -49,9 +49,18 @@
 ## Part III-數據預處理篇
 
 * [About Part III](part-iii-shu-ju-yu-chu-li-pian/about-part-iii.md)
-* [7.好用的CASE與WHEN IF](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if.md)
-* [8.用函數高效處理數據](part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju.md)
-* [9.煩人的缺失數據與極端值](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi.md)
+* [7.好用的CASE與WHEN IF](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/README.md)
+  * [CASE WHEN函數](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/case-when-han-shu.md)
+  * [IF函數](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/if-han-shu.md)
+* [8.用函數高效處理數據](part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju/README.md)
+  * [常用數值處理函數](part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju/chang-yong-shu-zhi-chu-li-han-shu.md)
+  * [常用時間處理函數](part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju/chang-yong-shi-jian-chu-li-han-shu.md)
+  * [常用字符串處理函數](part-iii-shu-ju-yu-chu-li-pian/8.-yong-han-shu-gao-xiao-chu-li-shu-ju/chang-yong-zi-fu-chuan-chu-li-han-shu.md)
+* [9.煩人的缺失數據與極端值](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/README.md)
+  * [評估數據質量](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/ping-gu-shu-ju-zhi-liang.md)
+  * [缺失值對聚合函數及算術運算的影響](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/que-shi-zhi-dui-ju-he-han-shu-ji-suan-shu-yun-suan-de-ying-xiang.md)
+  * [缺失值的處理方法](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/que-shi-zhi-de-chu-li-fang-fa.md)
+  * [查找極端值](part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/cha-zhao-ji-duan-zhi.md)
 
 ## Part IV-數據分析進階
 
