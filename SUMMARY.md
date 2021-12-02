@@ -39,8 +39,8 @@
   * [取別名後如何排序](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/qu-bie-ming-hou-ru-he-pai-xu.md)
   * [代碼註釋](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/dai-ma-zhu-shi.md)
 * [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/README.md)
-  * [聚合函數基本用法](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa/README.md)
-    * [Hive語句的執行順序](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa/hive-yu-ju-de-zhi-hang-shun-xu.md)
+  * [聚合函數基本用法](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa.md)
+  * [Hive語句的執行順序](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/hive-yu-ju-de-zhi-hang-shun-xu.md)
 
 ## Part III-數據預處理篇
 

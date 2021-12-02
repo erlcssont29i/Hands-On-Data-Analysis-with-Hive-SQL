@@ -4,7 +4,7 @@ description: 過濾你想要的數據
 
 # 4.過濾你想要的數據
 
-{% hint style="info" %}
+{% hint style="success" %}
 【本章重點】數據表通常含有大量數據，有些是我們分析時不需要的，本章我們將學習如何過濾出想要的數據。
 {% endhint %}
 

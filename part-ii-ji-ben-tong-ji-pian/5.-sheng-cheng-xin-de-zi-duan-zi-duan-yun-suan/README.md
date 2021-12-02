@@ -4,7 +4,7 @@ description: 的字段運算
 
 # 5.生成新的字段-字段運算
 
-{% hint style="info" %}
+{% hint style="success" %}
 【本章重點】學習對不同字段進行運算，生成新的字段。
 {% endhint %}
 

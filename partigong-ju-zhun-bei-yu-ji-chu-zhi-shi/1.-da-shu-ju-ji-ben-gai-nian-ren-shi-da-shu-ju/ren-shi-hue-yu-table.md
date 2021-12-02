@@ -23,7 +23,7 @@ Hue是一個開源的Apache Hadoop UI系統，通過Hue我們可以在瀏覽器�
 
 表結構表示一張表由**哪些字段及字段的數據類型構成**，除了在Hue左側查看外，也可以用`DESC`語句查詢：
 
-```
+```sql
 DESC table_name ;
 ```
 

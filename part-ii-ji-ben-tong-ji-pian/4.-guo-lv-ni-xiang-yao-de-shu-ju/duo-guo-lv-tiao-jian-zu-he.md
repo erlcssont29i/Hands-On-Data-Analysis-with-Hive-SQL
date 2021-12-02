@@ -4,7 +4,7 @@
 
 前面查詢過 sale\_channel為web官網跟移動端官網的訂單，以下的語句查詢，也可得到相同的結果。
 
-```
+```sql
 select *
 from dws_order_d 
 where sale_channel='web官網' or sale_channel='移動端官網' ; 

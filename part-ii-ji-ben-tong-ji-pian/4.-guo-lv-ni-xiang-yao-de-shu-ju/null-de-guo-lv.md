@@ -4,7 +4,7 @@
 
 NULL時，則要使用`is NULL` (或是`is not NULL`) 篩選
 
-```
+```sql
 select *
 from dws_order_d 
 where original_price is null ;
@@ -12,7 +12,7 @@ where original_price is null ;
 
 空字符串的查詢方式如下：
 
-```
+```sql
 select *
 from dws_order_d 
 where order_id ='' ;
@@ -20,7 +20,7 @@ where order_id ='' ;
 
 但若hive底層保存的NULL是個字符串，想要過濾掉NULL值，用`is not null`反而則無效：
 
-```
+```sql
 select *
 from dws_order_d 
  where  original_price = 'NULL' ;
