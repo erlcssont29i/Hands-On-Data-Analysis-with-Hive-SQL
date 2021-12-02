@@ -17,7 +17,7 @@
 
 NULL值不會參與到聚合函數的運算之中，也就是說，**所有聚合函數，會先把NULL排除在外再進行聚合計算，而不是當作0參與計算。**
 
-<_煩_[_人的缺失數據與極端值_](../../../part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/)>這章將專門探討NULL的影響，目前先請當成已知
+<[_煩人的缺失數據與極端值_](../../../part-iii-shu-ju-yu-chu-li-pian/9.-fan-ren-de-que-shi-shu-ju-yu-ji-duan-zhi/)>這章將專門探討NULL的影響，目前先請當成已知
 
 
 
