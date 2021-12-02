@@ -2,7 +2,7 @@
 
 查詢訂單表中的訂單id：
 
-```
+```sql
 select order_id from dw.dws_order_d ;
 ```
 
