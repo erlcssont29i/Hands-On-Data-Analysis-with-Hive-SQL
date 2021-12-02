@@ -40,6 +40,10 @@
   * [代碼註釋](part-ii-ji-ben-tong-ji-pian/5.-sheng-cheng-xin-de-zi-duan-zi-duan-yun-suan/dai-ma-zhu-shi.md)
 * [6.最常見的分析問題：匯總與分組](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/README.md)
   * [聚合函數基本用法](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa/README.md)
+  * [GROUP BY 指定分組對象](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/group-by-zhi-ding-fen-zu-dui-xiang.md)
+  * [DISTINCT與聚合函數的配合](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/distinct-yu-ju-he-han-shu-de-pei-he.md)
+  * [HAVING過濾分組後的數據](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/having-guo-lv-fen-zu-hou-de-shu-ju.md)
+  * [GROUP BY 去重](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/group-by-qu-zhong.md)
   * [Hive語句的執行順序](part-ii-ji-ben-tong-ji-pian/6.-zui-chang-jian-de-fen-xi-wen-ti-hui-zong-yu-fen-zu/ju-he-han-shu-ji-ben-yong-fa/hive-yu-ju-de-zhi-hang-shun-xu.md)
 
 ## Part III-數據預處理篇
