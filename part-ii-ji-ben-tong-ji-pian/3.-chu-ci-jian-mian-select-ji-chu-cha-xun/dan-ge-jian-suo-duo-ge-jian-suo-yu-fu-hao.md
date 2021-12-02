@@ -29,6 +29,3 @@ select * from dw.dws_order_d ;
 * SQL對大小寫不敏感 ，例如`select` ,`SELECT`, `Select` 是相同的；另空格會被忽略，也就是SQL語句可以寫長長一行，也可以分寫在多行。**為了閱讀方便，對於比較複雜的SQL語句建議寫成多行**。
 {% endhint %}
 
-
-
-\

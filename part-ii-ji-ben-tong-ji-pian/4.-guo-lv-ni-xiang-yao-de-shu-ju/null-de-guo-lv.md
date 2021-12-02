@@ -26,4 +26,3 @@ from dws_order_d
  where  original_price = 'NULL' ;
 ```
 
-\

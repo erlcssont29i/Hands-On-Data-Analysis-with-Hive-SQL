@@ -23,4 +23,3 @@ select 1+2 ,
 
 ![](https://tva1.sinaimg.cn/large/008eGmZEly1gpc7orx8a1j30th0b374l.jpg)
 
-\

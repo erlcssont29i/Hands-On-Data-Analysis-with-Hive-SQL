@@ -12,4 +12,3 @@ where sale_channel='web官網' or sale_channel='移動端官網' ;
 
 **當and、or同時出現，Hive會以and為優先**。使用()將條件區分開，Hive就會優先執行括號內的條件語句。一來可以避免邏輯錯誤，二來邏輯會更清晰。
 
-\

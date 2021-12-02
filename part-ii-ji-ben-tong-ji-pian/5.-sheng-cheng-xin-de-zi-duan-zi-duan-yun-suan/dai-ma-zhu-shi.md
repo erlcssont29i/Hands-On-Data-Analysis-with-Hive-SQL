@@ -15,4 +15,3 @@ FROM dws_order_d
  limit 10 ;
 ```
 
-\

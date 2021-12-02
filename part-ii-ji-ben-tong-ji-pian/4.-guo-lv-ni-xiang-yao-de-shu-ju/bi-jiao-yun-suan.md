@@ -4,8 +4,6 @@ description: 比較運算
 
 # 比較運算
 
-
-
 數值比較：
 
 ```sql
@@ -36,4 +34,3 @@ where valid_time = '2020-01-01' ;
 ```
 {% endhint %}
 
-\
