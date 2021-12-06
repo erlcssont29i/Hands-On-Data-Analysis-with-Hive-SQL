@@ -7,7 +7,7 @@
 
 ## Part I-工具準備與基礎知識
 
-* [About Part I](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/about-part-i.md)
+* [ Part I Intro](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/part-i-intro.md)
 * [1.大數據基本概念：認識大數據](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/README.md)
   * [什麼是大數據](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/shi-mo-shi-da-shu-ju.md)
   * [認識開發環境：Hadoop與Hive](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/ren-shi-kai-fa-huan-jing-hadoop-yu-hive.md)
@@ -19,7 +19,7 @@
 
 ## Part II-基本統計篇
 
-* [About Part II](part-ii-ji-ben-tong-ji-pian/about-part-ii.md)
+* [Part II Intro](part-ii-ji-ben-tong-ji-pian/part-ii-intro.md)
 * [3.初次見面：SELECT基礎查詢](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/README.md)
   * [SELECT起手式與語句順序](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/select-qi-shou-shi-yu-yu-ju-shun-xu.md)
   * [單個檢索、多個檢索與\*符號](part-ii-ji-ben-tong-ji-pian/3.-chu-ci-jian-mian-select-ji-chu-cha-xun/dan-ge-jian-suo-duo-ge-jian-suo-yu-fu-hao.md)
@@ -48,7 +48,7 @@
 
 ## Part III-數據預處理篇
 
-* [About Part III](part-iii-shu-ju-yu-chu-li-pian/about-part-iii.md)
+* [Part III Intro](part-iii-shu-ju-yu-chu-li-pian/part-iii-intro.md)
 * [7.好用的CASE與WHEN IF](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/README.md)
   * [CASE WHEN函數](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/case-when-han-shu.md)
   * [IF函數](part-iii-shu-ju-yu-chu-li-pian/7.-hao-yong-de-case-yu-when-if/if-han-shu.md)
@@ -64,7 +64,7 @@
 
 ## Part IV-數據分析進階
 
-* [About Part IV](part-iv-shu-ju-fen-xi-jin-jie/about-part-iv.md)
+* [Part IV Intro](part-iv-shu-ju-fen-xi-jin-jie/part-iv-intro.md)
 * [10.實現多表查詢：子查詢](part-iv-shu-ju-fen-xi-jin-jie/10.-shi-xian-duo-biao-cha-xun-zi-cha-xun.md)
 * [11.利用JOIN實現表的橫向連接](part-iv-shu-ju-fen-xi-jin-jie/11.-shi-xian-duo-biao-cha-xun-li-yong-join-shi-xian-biao-de-heng-xiang-lian-jie.md)
 * [12.利用UNION實現表的縱向連接](part-iv-shu-ju-fen-xi-jin-jie/12.-shi-xian-duo-biao-cha-xun-li-yong-union-shi-xian-biao-de-zong-xiang-lian-jie.md)
