@@ -13,7 +13,10 @@
 
 ![](https://tva1.sinaimg.cn/large/008i3skNgy1gs1clfgazyj30ft0a8jsk.jpg)
 
-****
+完成後，在Docker dashboard顯示如下：
+
+![
+](https://tva1.sinaimg.cn/large/008i3skNgy1gthltavw3ij60yl0jt0th02.jpg)
 
 **Step3 : 登入HUE**
 
