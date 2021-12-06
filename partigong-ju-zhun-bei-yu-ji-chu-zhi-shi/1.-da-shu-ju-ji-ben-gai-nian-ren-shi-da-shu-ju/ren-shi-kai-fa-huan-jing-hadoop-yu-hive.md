@@ -47,5 +47,5 @@ Hadoop由**HDFS**、**YARN**及**MapReduce**三個核心項目組成，但Hadoop
 >
 > * Hadoop的名字來源於創始人Doug Cutting兒子的玩具大象。當時Cutting的兒子剛剛兩歲，正處在咿呀學語的階段，經常將自己的黃色玩具大象叫做"Hadoop"，Cutting靈機一動，將自己的大數據項目以此來命名。
 > * Doug Cutting後來加入了雅虎，並在雅虎工作期間支持了大量Hadoop的研發工作，因此Hadoop也經常被認為是雅虎開源的一款大數據框架
-> * 繼Hadoop之後，很多大數據框架相繼使用動物的名字來命名，例如Hive是蜜蜂、Flink的logo是一隻可愛的紅色松鼠、Impala是非洲的羚羊...(有興趣的同學可Goodle 圖片"Hadoop Ecosystem logo")
+> * 繼Hadoop之後，很多大數據框架相繼使用動物的名字來命名，例如Hive是蜜蜂、Flink是一隻紅色松鼠、Impala是非洲的羚羊...(有興趣的同學可Goodle 圖片"Hadoop Ecosystem logo")
 
