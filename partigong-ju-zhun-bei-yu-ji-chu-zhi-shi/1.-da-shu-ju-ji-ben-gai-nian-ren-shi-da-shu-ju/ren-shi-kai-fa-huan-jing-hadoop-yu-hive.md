@@ -2,6 +2,8 @@
 
 ### Hadoop
 
+![](../../.gitbook/assets/hadoop-logo-475x230.png)
+
 Hadoop是一個分佈式計算的基礎架構，因具備高可靠、高拓展、高容錯、低成本的特點，成為目前最流行的大數據分析系統**。**是Doug Cutting根據Google發布的學術論文而創建的開源項目，根據官方的定義是：
 
 > The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.
@@ -21,7 +23,7 @@ Hadoop由**HDFS**、**YARN**及**MapReduce**三個核心項目組成，但Hadoop
 
 圍繞著這些問題，從而形成了Hadoop的技術生態。
 
-### **Mapreduce**
+### **MapReduce**
 
 **Hive**也是Hadoop生態裡的項目。我們重點來理解MapReduce跟Hive。
 
@@ -37,4 +39,13 @@ Hadoop由**HDFS**、**YARN**及**MapReduce**三個核心項目組成，但Hadoop
 
 如此一來，讓熟悉SQL但不會編程MapReduce程序的人，也能使用Hadoop進行處理數據。白話來說，就是Hive會自動將 SQL语句通過解釋器轉換為 MapReduce任務運行。
 
-\
+
+
+
+
+> 大數據動物園
+>
+> * Hadoop的名字來源於創始人Doug Cutting兒子的玩具大象。當時Cutting的兒子剛剛兩歲，正處在咿呀學語的階段，經常將自己的黃色玩具大象叫做"Hadoop"，Cutting靈機一動，將自己的大數據項目以此來命名。
+> * Doug Cutting後來加入了雅虎，並在雅虎工作期間支持了大量Hadoop的研發工作，因此Hadoop也經常被認為是雅虎開源的一款大數據框架
+> * 繼Hadoop之後，很多大數據框架相繼使用動物的名字來命名，例如Hive是蜜蜂、Flink的logo是一隻可愛的紅色松鼠、Impala是非洲的羚羊...(有興趣的同學可Goodle 圖片"Hadoop Ecosystem logo")
+
