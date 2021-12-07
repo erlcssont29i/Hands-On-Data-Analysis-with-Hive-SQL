@@ -4,6 +4,7 @@
 
 * [About This Book](README.md)
 * [Why Learning Hive SQL](introduction/why-learning-hive-sql.md)
+* [Extra Reference](introduction/extra-reference.md)
 
 ## Part I-工具準備與基礎知識
 
