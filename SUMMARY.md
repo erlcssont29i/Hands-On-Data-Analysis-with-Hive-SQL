@@ -72,6 +72,6 @@
 * [14.強大的窗口函數](part-iv-shu-ju-fen-xi-jin-jie/14.-qiang-da-de-chuang-kou-han-shu.md)
 * [15.庫、表的操作](part-iv-shu-ju-fen-xi-jin-jie/15.-ku-biao-de-cao-zuo.md)
 
-## 關於資料倉庫，你需要知道的幾件事
+## 關於資料倉庫，你需要知道的幾件事 <a href="#about datawarehouse" id="about datawarehouse"></a>
 
-* [什麼是資料倉庫 ](guan-yu-zi-liao-cang-ku-ni-xu-yao-zhi-dao-de-ji-jian-shi/shi-mo-shi-zi-liao-cang-ku.md)
+* [什麼是資料倉庫 ](<about datawarehouse/shi-mo-shi-zi-liao-cang-ku.md>)
