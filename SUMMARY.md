@@ -71,3 +71,7 @@
 * [13.改變表結構：行列互轉](part-iv-shu-ju-fen-xi-jin-jie/13.-gai-bian-biao-jie-gou-hang-lie-hu-zhuan.md)
 * [14.強大的窗口函數](part-iv-shu-ju-fen-xi-jin-jie/14.-qiang-da-de-chuang-kou-han-shu.md)
 * [15.庫、表的操作](part-iv-shu-ju-fen-xi-jin-jie/15.-ku-biao-de-cao-zuo.md)
+
+## 關於資料倉庫，你需要知道的幾件事
+
+* [什麼是資料倉庫 ](guan-yu-zi-liao-cang-ku-ni-xu-yao-zhi-dao-de-ji-jian-shi/shi-mo-shi-zi-liao-cang-ku.md)
