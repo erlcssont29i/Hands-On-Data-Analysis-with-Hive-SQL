@@ -1,6 +1,9 @@
 # Home work Anser
 
-
+{% hint style="info" %}
+* 每章節的作業請**務必經過思考並繳交**，勿直接看答案，否則學習效果將打(骨)折
+* 解法不唯一，以下答案僅供參考
+{% endhint %}
 
 **作業繳交規範：**
 
@@ -15,19 +18,35 @@
 1. 直接貼上自己寫的代碼留言送出
 2. 將代碼及返回結果截圖上傳
 
+
+
 ### Ch3 初次見面：SELECT基礎查詢&#x20;
 
-\<HiveSQL\_ch3\_作業1>
+\<HiveSQL\_ch3\_作業1>&#x20;
 
 
 
-### Ch4 初次見面：過濾你想要的數據
+### Ch4 過濾你想要的數據
 
 \<HiveSQL\_ch4\_作業1>
 
 
 
-### Ch5 初次見面：過濾你想要的數據
+```sql
+select 
+    order_id,
+    original_price,
+    pay_amount,
+    sale_channel 
+from dw.dws_order_d
+where sale_channel ='web官網'
+and (order_id like'%test%' OR original_price=0 OR original_price is null  )
+;
+```
+
+###
+
+### Ch5 生成新的字段-字段運算
 
 \<HiveSQL\_ch5\_作業1>
 
@@ -35,16 +54,19 @@
 
 ```sql
 select *,  
-original_price-pay_amount as reduce_amount, 
-(original_price-pay_amount)/original_price as reduce_rate 
- from dws_order_d order by reduce_amount desc        ;
+ original_price-pay_amount as reduce_amount, 
+ (original_price-pay_amount)/original_price as reduce_rate 
+ from dws_order_d order by reduce_amount desc   
+ ;
 ```
 
 
 
-### Ch6 初次見面：過濾你想要的數據
+### Ch6 最常見的分析問題：匯總與分組
 
 \<HiveSQL\_ch6\_作業1>
+
+
 
 ```sql
 select 
@@ -63,7 +85,9 @@ select
    ;
 ```
 
-### Ch7 初次見面：過濾你想要的數據
+###
+
+### Ch7 好用的CASE WHEN與IF
 
 \<HiveSQL\_ch7\_作業1>
 
@@ -83,44 +107,105 @@ avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)) as  pay_avg_s
  ;
 ```
 
-### Ch8 初次見面：過濾你想要的數據
+###
+
+### Ch8 初次見面：用函數高效的處理數據
 
 \<HiveSQL\_ch8\_作業1>
 
+
+
 ```sql
+SELECT 
+substr(valid_time,1,7) as month,
+count(order_id) as order_cou_ttl , 
+count(if(city in ('10017','63','65','10003','10004'),order_id,null)) as order_cou_n,
+count(if( city in('10005','66','10007','10008','10009'),order_id,null)) as order_cou_m,
+count(if( city in ('Chiayi','67','64','10013'),order_id,null)) as order_cou_s,
+round(avg(pay_amount),2) as pay_avg_ttl , 
+round(avg(if(city in ('10017','63','65','10003','10004'),pay_amount,null)),2) as  pay_avg_n,
+round(avg(if( city in ('10005','66','10007','10008','10009'),pay_amount,null)),2) as  pay_avg_m,
+round(avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)),2) as  pay_avg_s
+	from dw.dws_order_d 
+ where order_id not like'%test%' and (original_price<>0 or original_price is not null)
+  and substr(valid_time,1,7) between substr(add_months(CURRENT_TIMESTAMP,-12),1,7) and substr(add_months(CURRENT_TIMESTAMP,-1),1,7)
+  group by substr(valid_time,1,7)
+ ;
 ```
+
+
 
 \<HiveSQL\_ch8\_作業2>
 
+
+
+```sql
+elect 
+-- user_id,
+	substr(user_name,1,1) as fname,
+	case when length(user_name)=2 then  substr(user_name,-1,1)
+	when length(user_name)in (3,4) then substr(user_name,-2,2) end as sname, 
+--  split(age,'-|\\+'),
+--  split(age,'-|\\+')[0] as age_min,
+--  if(split(age,'-|\\+')[1] ='' ,85 ,split(age,'-|\\+')[1])  as age_max , 
+  (split(age,'-|\\+')[0]+
+  if(split(age,'-|\\+')[1] ='' ,85 ,split(age,'-|\\+')[1]) )/2 as avg_age,
+   --   ((replace(split(age,'-')[0],'+','')) + if((split(age,'-')[1]) is null,85,split(age,'-')[1])) /2 
+     -- 	as avg_ag
+  concat_ws('-',substr(mobile,1,4),substr(mobile,5,3),'***') as mobile
+from dws_user_d 
+ -- where user_id in ('1018934','1024010') 
+ ; 
 ```
-```
+
+
 
 \<HiveSQL\_ch8\_作業3>
 
-```
+
+
+```sql
+select 
+user_id,
+-- max(substr(valid_time,1,10)), 
+datediff(current_date,max(substr(valid_time,1,10))) as r ,
+count(distinct order_id) as f,
+sum(pay_amount) as m
+from dw.dws_order_d
+where substr(valid_time,1,10)<current_date
+group by user_id
+;
 ```
 
-### Ch9 初次見面：過濾你想要的數據
+###
+
+### Ch9 煩人的缺失數據與極端值
 
 \<HiveSQL\_ch9\_作業1>
+
+
 
 ```sql
 ```
 
-### Ch10 初次見面：過濾你想要的數據
+###
+
+### Ch10 實現多表查詢：子查詢
 
 \<HiveSQL\_ch10\_作業1>
 
+
+
 ```
-select *,  
-original_price-pay_amount as reduce_amount, 
-(original_price-pay_amount)/original_price as reduce_rate 
- from dws_order_d order by reduce_amount desc        ;
 ```
 
-### Ch11 初次見面：過濾你想要的數據
+###
+
+### Ch11 利用JOIN實現表的橫向連接
 
 \<HiveSQL\_ch11\_作業1>
+
+
 
 ```sql
 SELECT
@@ -133,7 +218,11 @@ left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_
 ;
 ```
 
+
+
 \<HiveSQL\_ch11\_作業2>
+
+
 
 ```sql
 SELECT  
@@ -150,9 +239,13 @@ join
  where a.pay_amount > b.op_01 and a.pay_amount  < b.op_99 ; 
 ```
 
-### Ch12 初次見面：過濾你想要的數據
+###
+
+### Ch12 利用UNION實現表的縱向連接
 
 \<HiveSQL\_ch12\_作業1>
+
+
 
 ```sql
 SELECT
@@ -165,16 +258,13 @@ left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_
 ;
 ```
 
-### Ch14 初次見面：過濾你想要的數據
+###
+
+### Ch14 強大的窗口函數
 
 \<HiveSQL\_ch14\_作業1>
 
-```sql
-```
 
-
-
-\<HiveSQL\_ch14\_作業2>
 
 ```sql
 select 
