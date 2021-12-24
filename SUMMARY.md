@@ -7,7 +7,7 @@
 
 ## Part I-工具準備與基礎知識
 
-* [ Part I Intro](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/part-i-intro.md)
+* [Part I Intro](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/part-i-intro.md)
 * [1.大數據基本概念：認識大數據](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/README.md)
   * [什麼是大數據](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/shi-mo-shi-da-shu-ju.md)
   * [認識開發環境：Hadoop與Hive](partigong-ju-zhun-bei-yu-ji-chu-zhi-shi/1.-da-shu-ju-ji-ben-gai-nian-ren-shi-da-shu-ju/ren-shi-kai-fa-huan-jing-hadoop-yu-hive.md)
@@ -72,6 +72,10 @@
 * [14.強大的窗口函數](part-iv-shu-ju-fen-xi-jin-jie/14.-qiang-da-de-chuang-kou-han-shu.md)
 * [15.庫、表的操作](part-iv-shu-ju-fen-xi-jin-jie/15.-ku-biao-de-cao-zuo.md)
 
-## 關於資料倉庫，你需要知道的幾件事 <a href="#about datawarehouse" id="about datawarehouse"></a>
+## 關於資料倉庫，你需要知道的幾件事 <a href="#about-datawarehouse" id="about-datawarehouse"></a>
 
-* [什麼是資料倉庫 ](<about datawarehouse/shi-mo-shi-zi-liao-cang-ku.md>)
+* [什麼是資料倉庫](<about datawarehouse/shi-mo-shi-zi-liao-cang-ku.md>)
+
+## Home work
+
+* [Home work Anser](home-work/home-work-anser.md)
