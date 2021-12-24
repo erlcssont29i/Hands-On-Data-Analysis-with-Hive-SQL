@@ -170,14 +170,6 @@ left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_
 \<HiveSQL\_ch14\_作業1>
 
 ```sql
-SELECT
-a.*,b.*,c.*,d.* 
-FROM
-(select * from dw.dws_order_d) a 
-left join (select * from dw.dws_user_d) b ON a.user_id=b.user_id
-left join (select * from dw.dws_mkt_act_d) c   ON a.ump_id=c.ump_id
-left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_code
-;
 ```
 
 
@@ -185,13 +177,24 @@ left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_
 \<HiveSQL\_ch14\_作業2>
 
 ```sql
-SELECT
-a.*,b.*,c.*,d.* 
-FROM
-(select * from dw.dws_order_d) a 
-left join (select * from dw.dws_user_d) b ON a.user_id=b.user_id
-left join (select * from dw.dws_mkt_act_d) c   ON a.ump_id=c.ump_id
-left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_code
-;
+select 
+user_id,
+case when datediff(log_day,date2)=1 then 'y' else 'n' end as  log2day ,
+case when datediff(log_day,date3)=2 then 'y' else 'n' end as  log3day ,
+case when datediff(log_day,date4)=3 then 'y' else 'n' end as  log4day ,
+case when datediff(log_day,date5)=4 then 'y' else 'n' end as  log5day ,
+case when datediff(log_day,date6)=5 then 'y' else 'n' end as  log6day 
+from
+(select a.*,row_number()over(partition by user_id order by log_day desc  ) as rn
+from 
+(select user_id ,substr(log_time,1,10) as log_day,
+ 	 lead(substr(log_time,1,10),1) over(partition by user_id order by substr(log_time,1,10) desc ) as date2,
+ 	lead(substr(log_time,1,10),2) over(partition by user_id order by substr(log_time,1,10) desc ) as date3 ,
+ 	lead(substr(log_time,1,10),3) over(partition by user_id order by substr(log_time,1,10) desc ) as date4,
+ 	lead(substr(log_time,1,10),4) over(partition by user_id order by substr(log_time,1,10) desc ) as date5,
+  lead(substr(log_time,1,10),5) over(partition by user_id order by substr(log_time,1,10) desc ) as date6
+ 	from default.user_login 
+ 		group by user_id,substr(log_time,1,10) ) a  ) b where rn=1
+ 		;
 ```
 
