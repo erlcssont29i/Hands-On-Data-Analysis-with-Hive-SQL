@@ -140,7 +140,7 @@ round(avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)),2) as  pay_
 
 
 ```sql
-elect 
+select 
 -- user_id,
 	substr(user_name,1,1) as fname,
 	case when length(user_name)=2 then  substr(user_name,-1,1)
@@ -196,7 +196,42 @@ group by user_id
 
 
 
-```
+```sql
+-- step 1: 
+SELECT
+  percentile(cast(r as int), 0.5) as r_mid,
+  percentile(cast(f as int), 0.5) as f_mid,
+  percentile(cast(m as int), 0.5) as m_mid
+FROM
+(select
+user_id,
+min(datediff(current_date, substr(valid_time, 1, 10))) as r,
+count(order_id) as f,
+sum(pay_amount) as m
+from dw.dws_order_d
+where substr(valid_time, 1, 10) < current_date
+GROUP BY user_id) as rfm
+;
+ -- ** this query's result: r_mind=241, r_mid=1, m_mid=1596
+
+-- step 2:
+SELECT
+    user_id,
+    Recency,
+    Frequency,
+    Monetary,
+    if(Recency < 241, '高', '低') as r_Level,
+    if(Frequency > 1, '高', '低') as f_Level,
+    if(Monetary > 1596, '高', '低') as m_Level
+FROM
+(select
+user_id,
+min(datediff(current_date, substr(valid_time, 1, 10))) as Recency,
+count(order_id) as Frequency,
+sum(pay_amount) as Monetary
+from dw.dws_order_d
+where substr(valid_time, 1, 10) < current_date
+GROUP BY user_id) as rf
 ```
 
 ###
