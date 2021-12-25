@@ -26,7 +26,11 @@
 
 **\<HiveSQL\_ch3\_作業1>**&#x20;
 
-```
+```sql
+select * from dw.dws_order_d 
+ order by pay_amount desc
+ limit 10 
+ ;
 ```
 
 ###
@@ -58,10 +62,12 @@ and (order_id like'%test%' OR original_price=0 OR original_price is null  )
 **\<HiveSQL\_ch5\_作業1>**
 
 ```sql
-select *,  
- original_price-pay_amount as reduce_amount, 
- (original_price-pay_amount)/original_price as reduce_rate 
- from dws_order_d order by reduce_amount desc   
+select 
+  *,  
+  original_price-pay_amount as reduce_amount, 
+  (original_price-pay_amount)/original_price as reduce_rate 
+ from dws_order_d 
+ order by reduce_amount desc   
  ;
 ```
 
@@ -109,7 +115,7 @@ avg(if(city in ('10017','63','65','10003','10004'),pay_amount,null)) as  pay_avg
 avg(if( city in ('10005','66','10007','10008','10009'),pay_amount,null)) as  pay_avg_m,
 avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)) as  pay_avg_s
 	from dw.dws_order_d 
- where order_id not like'%test%' 
+ -- where order_id not like '%test%' 
    and (original_price <> 0 or original_price is not null )
  ;
 ```
@@ -133,10 +139,12 @@ round(avg(pay_amount),2) as pay_avg_ttl ,
 round(avg(if(city in ('10017','63','65','10003','10004'),pay_amount,null)),2) as  pay_avg_n,
 round(avg(if( city in ('10005','66','10007','10008','10009'),pay_amount,null)),2) as  pay_avg_m,
 round(avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)),2) as  pay_avg_s
-	from dw.dws_order_d 
+       from dw.dws_order_d 
  where order_id not like'%test%' and (original_price<>0 or original_price is not null)
-  and substr(valid_time,1,7) between substr(add_months(CURRENT_TIMESTAMP,-12),1,7) and substr(add_months(CURRENT_TIMESTAMP,-1),1,7)
-  group by substr(valid_time,1,7)
+  and substr(valid_time,1,7) between 
+     substr(add_months(CURRENT_TIMESTAMP,-12),1,7) 
+        and  substr(add_months(CURRENT_TIMESTAMP,-1),1,7)
+ group by substr(valid_time,1,7)
  ;
 ```
 
@@ -169,11 +177,10 @@ from dws_user_d
 
 ```sql
 select 
-user_id,
--- max(substr(valid_time,1,10)), 
-datediff(current_date,max(substr(valid_time,1,10))) as r ,
-count(distinct order_id) as f,
-sum(pay_amount) as m
+    user_id,
+    datediff(current_date,max(substr(valid_time,1,10))) as r ,
+    count(distinct order_id) as f,
+    sum(pay_amount) as m
 from dw.dws_order_d
 where substr(valid_time,1,10)<current_date
 group by user_id
@@ -189,6 +196,17 @@ group by user_id
 **\<HiveSQL\_ch9\_作業1>**
 
 ```sql
+select 
+    substr(valid_time, 1, 4) as year,
+    avg(pay_amount) as average, -- 平均數
+    percentile(cast(pay_amount as int), 0.25) as q1, -- 第一四分位數
+    percentile(cast(pay_amount as int), 0.5) as q2, -- 第二四分位數
+    percentile(cast(pay_amount as int), 0.75) as q3, -- 第三四分位數
+    max(pay_amount) as max_value, -- 最大值
+    min(pay_amount) as min_value, -- 最小值
+from dw.dws_order_d
+group by  substr(valid_time, 1, 4)
+;
 ```
 
 ###
