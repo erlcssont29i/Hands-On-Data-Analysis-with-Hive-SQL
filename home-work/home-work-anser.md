@@ -255,6 +255,51 @@ where substr(valid_time, 1, 10) < current_date
 GROUP BY user_id) as rf
 ```
 
+> &#x20;如果您已經會使用JOIN，本題可改為通用寫法(即r\_mind,r\_mid ,m\_mid非寫死一固定值)，如下：
+
+```sql
+with rfm as 
+(
+  select 
+    user_id,
+    min(datediff(current_date,substr(valid_time,1,10))) as r ,
+    count(distinct order_id) as f,
+    sum(pay_amount) as m
+    from dw.dws_order_d
+    where substr(valid_time,1,10)<current_date
+    group by user_id
+) 
+
+SELECT
+t1.r as r_value,
+t1.f as f_value,
+t1.m as m_value,
+if(t1.r < t2.r_mid,'高','低') as r_level,
+if(t1.f > t2.f_mid,'高','低') as f_level,
+if(t1.m > t2.m_mid,'高','低') as m_level,
+CASE 
+ when t1.r < t2.r_mid and t1.f > t2.f_mid and t1.m <= t2.m_mid then '一般價值' -- 高 高 低
+ when t1.r < t2.r_mid and t1.f > t2.f_mid and t1.m > t2.m_mid then '重要價值' -- 高 高 高
+ when t1.r < t2.r_mid and t1.f <= t2.f_mid and t1.m <= t2.m_mid then '一般發展' -- 高 低 低
+ when t1.r < t2.r_mid and t1.f <= t2.f_mid and t1.m > t2.m_mid then '重要價值' -- 高 低 高
+ when t1.r >= t2.r_mid and t1.f > t2.f_mid and t1.m <= t2.m_mid then '一般保持' -- 低 高 低
+ when t1.r >= t2.r_mid and t1.f > t2.f_mid and t1.m > t2.m_mid then '重要保持' -- 低 高 高
+ when t1.r >= t2.r_mid and t1.f <= t2.f_mid and t1.m <= t2.m_mid then '一般挽留' -- 低 低 低
+ when t1.r >= t2.r_mid and t1.f <= t2.f_mid and t1.m > t2.m_mid then '重要挽留' -- 低 低 高
+END as value_level
+FROM
+(select 'a' as id, * from rfm) t1
+
+left join 
+  (SELECT 
+    'a' as id ,
+    percentile(cast(r as int), 0.5) as r_mid,
+    percentile(cast(f as int), 0.5) as f_mid,
+    percentile(cast(m as int), 0.5) as m_mid
+  FROM rfm ) t2 ON t1.id=t1.id
+;
+```
+
 ###
 
 ### Ch11 利用JOIN實現表的橫向連接
@@ -302,6 +347,47 @@ join
 **\<HiveSQL\_ch12\_作業1>**
 
 ```sql
+select
+    'C001' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where order_state =5 and substr(valid_time,1,4) = year(current_date)
+
+union all
+select
+    'C002' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where is_return = 1 and substr(valid_time,1,4) = substr(current_date)
+
+union all
+select
+    'C003' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where order_state =5 and substr(valid_time,1,7) = substr(current_date)
+
+union all
+select
+    'C004' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where is_return = 1 and substr(valid_time,1,7) = substr(current_date)
+
+union all
+select
+    'C005' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where order_state =5 and substr(valid_time,1,7) = substr(add_months(current_date,-1),1,7)
+
+union all
+select
+    'C006' as index_id,
+    count(distinct user_id) as index_value
+from dw.dws_order_d
+where is_return = 1 and substr(valid_time,1,7) = substr(add_months(current_date,-1),1,7)
+;
 ```
 
 ###
