@@ -1,6 +1,6 @@
 # Home work Anser
 
-{% hint style="info" %}
+{% hint style="warning" %}
 * 每章節的作業請**務必經過思考並繳交**，勿直接看答案，否則學習效果將打(骨)折
 * 解法不唯一，以下答案僅供參考
 {% endhint %}
@@ -13,7 +13,7 @@
 範例：<HiveSQL>_ch3_作業1
 ```
 
-【繳交方式】
+**【繳交方式】**
 
 1. 直接貼上自己寫的代碼留言送出
 2. 將代碼及返回結果截圖上傳
@@ -22,15 +22,20 @@
 
 ### Ch3 初次見面：SELECT基礎查詢&#x20;
 
-\<HiveSQL\_ch3\_作業1>&#x20;
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.41 (2).png>)
 
+**\<HiveSQL\_ch3\_作業1>**&#x20;
 
+```
+```
+
+###
 
 ### Ch4 過濾你想要的數據
 
-\<HiveSQL\_ch4\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.38 (2).png>)
 
-
+**\<HiveSQL\_ch4\_作業1>**
 
 ```sql
 select 
@@ -48,9 +53,9 @@ and (order_id like'%test%' OR original_price=0 OR original_price is null  )
 
 ### Ch5 生成新的字段-字段運算
 
-\<HiveSQL\_ch5\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.43 (2).png>)
 
-
+**\<HiveSQL\_ch5\_作業1>**
 
 ```sql
 select *,  
@@ -64,9 +69,9 @@ select *,
 
 ### Ch6 最常見的分析問題：匯總與分組
 
-\<HiveSQL\_ch6\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.45 (2).png>)
 
-
+**\<HiveSQL\_ch6\_作業1>**
 
 ```sql
 select 
@@ -89,7 +94,9 @@ select
 
 ### Ch7 好用的CASE WHEN與IF
 
-\<HiveSQL\_ch7\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.47 (2).png>)
+
+**\<HiveSQL\_ch7\_作業1>**
 
 ```sql
 SELECT 
@@ -111,9 +118,9 @@ avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)) as  pay_avg_s
 
 ### Ch8 初次見面：用函數高效的處理數據
 
-\<HiveSQL\_ch8\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.47.49 (2).png>)
 
-
+**\<HiveSQL\_ch8\_作業1>**
 
 ```sql
 SELECT 
@@ -135,9 +142,7 @@ round(avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)),2) as  pay_
 
 
 
-\<HiveSQL\_ch8\_作業2>
-
-
+**\<HiveSQL\_ch8\_作業2>**
 
 ```sql
 select 
@@ -160,9 +165,7 @@ from dws_user_d
 
 
 
-\<HiveSQL\_ch8\_作業3>
-
-
+**\<HiveSQL\_ch8\_作業3>**
 
 ```sql
 select 
@@ -181,9 +184,9 @@ group by user_id
 
 ### Ch9 煩人的缺失數據與極端值
 
-\<HiveSQL\_ch9\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.48.01 (2).png>)
 
-
+**\<HiveSQL\_ch9\_作業1>**
 
 ```sql
 ```
@@ -192,9 +195,9 @@ group by user_id
 
 ### Ch10 實現多表查詢：子查詢
 
-\<HiveSQL\_ch10\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.48.05 (2).png>)
 
-
+**\<HiveSQL\_ch10\_作業1>**
 
 ```sql
 -- step 1: 
@@ -238,9 +241,9 @@ GROUP BY user_id) as rf
 
 ### Ch11 利用JOIN實現表的橫向連接
 
-\<HiveSQL\_ch11\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.48.11 (2).png>)
 
-
+**\<HiveSQL\_ch11\_作業1>**
 
 ```sql
 SELECT
@@ -255,9 +258,7 @@ left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_
 
 
 
-\<HiveSQL\_ch11\_作業2>
-
-
+**\<HiveSQL\_ch11\_作業2>**
 
 ```sql
 SELECT  
@@ -278,28 +279,20 @@ join
 
 ### Ch12 利用UNION實現表的縱向連接
 
-\<HiveSQL\_ch12\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.48.13 (2).png>)
 
-
+**\<HiveSQL\_ch12\_作業1>**
 
 ```sql
-SELECT
-a.*,b.*,c.*,d.* 
-FROM
-(select * from dw.dws_order_d) a 
-left join (select * from dw.dws_user_d) b ON a.user_id=b.user_id
-left join (select * from dw.dws_mkt_act_d) c   ON a.ump_id=c.ump_id
-left join (select distinct city_code,city from dw.dim_city) d  ON a.city=d.city_code
-;
 ```
 
 ###
 
 ### Ch14 強大的窗口函數
 
-\<HiveSQL\_ch14\_作業1>
+![](<../.gitbook/assets/Screen Shot 2021-12-25 at 13.48.24 (2).png>)
 
-
+**\<HiveSQL\_ch14\_作業1>**
 
 ```sql
 select 
