@@ -74,7 +74,11 @@
 
 ## 關於資料倉庫，你需要知道的幾件事 <a href="#about-datawarehouse" id="about-datawarehouse"></a>
 
-* [什麼是資料倉庫](<about datawarehouse/shi-mo-shi-zi-liao-cang-ku.md>)
+* [什麼是資料倉庫(Data Warehouse)](<about datawarehouse/shi-mo-shi-zi-liao-cang-ku.md>)
+* [為什麼需要Data Warehouse](about-datawarehouse/wei-shi-mo-xu-yao-data-warehouse.md)
+* [ETL與Pipeline](about-datawarehouse/etl-yu-pipeline.md)
+* [維度建模理論](about-datawarehouse/wei-du-jian-mo-li-lun.md)
+* [元數據(Meta Data)管理](about-datawarehouse/yuan-shu-ju-meta-data-guan-li.md)
 
 ## Home work
 
