@@ -8,13 +8,13 @@ _2021-11-30_
 
 本課程已上架Hahow，考量學員權益，本書將在不影響整體架構下進行部分內容精簡，完整內容可至平台付費獲取、並配合教學影片、數據與Hadoop環境使用。
 
-課程難度度至可解題Leetcode SQL Hard等級，相關題目可參考Hands-On Leetcode Database Solution with Hive SQL此書
+課程難度度至可解題Leetcode SQL Hard等級，相關題目可參閱<[Hands-On Leetcode Database Solution with Hive SQL](https://chiu-kuohsin.gitbook.io/leetcode-database-solution-with-hive-sql/)>此書
 
-如果您對課程有興趣，歡迎至平台了解課程相關內容。
+如果您對課程有興趣，歡迎至[Hahow平台](https://hahow.in/cr/andyrockhive)了解課程相關內容。
 
 ### 如何使用本書？
 
-對於初級人員，可以透過本書對Hive及數據分析有基礎認知，若以分析工作為職業發展方向，建議配合線上課程系統學習、打下比較穩固的基礎。
+對於初級人員或其他相關職能者(例如行銷、產品經理)，可以透過本書對Hive及數據分析有基礎認知，若以分析工作為職業發展方向，建議配合線上課程系統學習、打下比較穩固的基礎。
 
 對於中高級同行，本書內容覆蓋大多數分析場景，也是絕佳的參考資料。
 
