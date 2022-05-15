@@ -115,7 +115,7 @@ avg(if(city in ('10017','63','65','10003','10004'),pay_amount,null)) as  pay_avg
 avg(if( city in ('10005','66','10007','10008','10009'),pay_amount,null)) as  pay_avg_m,
 avg(if( city in ('Chiayi','67','64','10013'),pay_amount,null)) as  pay_avg_s
 	from dw.dws_order_d 
- -- where order_id not like '%test%' 
+  where order_id not like '%test%' 
    and (original_price <> 0 or original_price is not null )
  ;
 ```
